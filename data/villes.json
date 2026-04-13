@@ -1,0 +1,18 @@
+{
+  "zone": {
+    "nom": "Provence",
+    "departements": ["Bouches-du-Rhône (13)", "Vaucluse (84)"],
+    "region": "Provence-Alpes-Côte d'Azur"
+  },
+  "villes": [
+    { "nom": "Marseille", "slug": "marseille", "departement": "13" },
+    { "nom": "Aix-en-Provence", "slug": "aix-en-provence", "code_postal": "13100", "departement": "13" },
+    { "nom": "Avignon", "slug": "avignon", "code_postal": "84000", "departement": "84" },
+    { "nom": "Aubagne", "slug": "aubagne", "code_postal": "13400", "departement": "13" },
+    { "nom": "Martigues", "slug": "martigues", "code_postal": "13500", "departement": "13" },
+    { "nom": "Salon-de-Provence", "slug": "salon-de-provence", "code_postal": "13300", "departement": "13" },
+    { "nom": "La Ciotat", "slug": "la-ciotat", "code_postal": "13600", "departement": "13" },
+    { "nom": "Vitrolles", "slug": "vitrolles", "code_postal": "13127", "departement": "13" },
+    { "nom": "Gardanne", "slug": "gardanne", "code_postal": "13120", "departement": "13" }
+  ]
+}

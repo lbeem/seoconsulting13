@@ -1,0 +1,11 @@
+/* TEAM */
+Agence : SEO Consulting 13
+Contact : contact@seo-consulting13.fr
+Zone : Bouches-du-Rhône & Vaucluse, France
+
+/* SITE */
+Last update: 2026-04-07
+Language: Français
+Standards: HTML5, CSS3, JavaScript
+Components: Zero framework, vanilla JS, no tracking, no cookies
+Software: Claude Code, Vercel, GitHub

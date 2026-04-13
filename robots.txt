@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://seo-consulting13.fr/sitemap.xml
