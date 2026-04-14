@@ -137,6 +137,53 @@
 .faq-item.active .faq-question svg{transform:rotate(180deg)!important;color:#7C3AED!important}
 .faq-answer{max-height:0!important;overflow:hidden!important;transition:max-height .3s ease!important}
 .faq-answer__inner{padding:0 1.5rem 1.25rem!important;color:#475569!important;font-size:.9375rem!important;line-height:1.7!important}
+
+.prestations-alternees{padding:4rem 0!important;background:#FFF!important}
+.prestations-alternees .container{max-width:1100px!important;margin:0 auto!important;padding:0 1.5rem!important}
+.prestations-alternees>.container>h2{text-align:center!important;font-family:"Space Grotesk",sans-serif!important;font-size:clamp(1.5rem,3vw,2rem)!important;color:#1E293B!important;margin:0 0 .75rem 0!important}
+.prestations-alternees .section-subtitle{text-align:center!important;color:#64748B!important;margin:0 auto 3.5rem auto!important;max-width:720px!important;line-height:1.65!important}
+.prestation-bloc{display:flex!important;align-items:center!important;gap:3rem!important;margin-bottom:4rem!important}
+.prestation-bloc:last-child{margin-bottom:0!important}
+.prestation-bloc[data-direction="right"]{flex-direction:row-reverse!important}
+.prestation-bloc-visual{flex:0 0 220px!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;background:linear-gradient(135deg,rgba(124,58,237,.06) 0%,rgba(124,58,237,.02) 100%)!important;border:1px solid rgba(124,58,237,.15)!important;border-radius:20px!important;padding:2.5rem 1.5rem!important;gap:1.25rem!important}
+.prestation-numero{font-family:"Space Grotesk",sans-serif!important;font-size:3.5rem!important;font-weight:700!important;color:#7C3AED!important;line-height:1!important}
+.prestation-icon{display:flex!important;align-items:center!important;justify-content:center!important;width:64px!important;height:64px!important;background:#FFF!important;border-radius:16px!important;color:#7C3AED!important;box-shadow:0 4px 12px rgba(124,58,237,.12)!important}
+.prestation-icon svg{width:32px!important;height:32px!important;max-width:32px!important;max-height:32px!important}
+.prestation-bloc-content{flex:1!important}
+.prestation-bloc-content h3{font-family:"Space Grotesk",sans-serif!important;font-size:1.4rem!important;font-weight:700!important;color:#1E293B!important;margin:0 0 .75rem 0!important}
+.prestation-bloc-content p{color:#475569!important;line-height:1.7!important;margin:0!important;font-size:1rem!important}
+@media(max-width:768px){.prestation-bloc,.prestation-bloc[data-direction="right"]{flex-direction:column!important;gap:1.5rem!important;margin-bottom:2.5rem!important}.prestation-bloc-visual{flex:none!important;width:100%!important;padding:1.75rem 1rem!important}.prestation-numero{font-size:2.5rem!important}.prestation-icon{width:52px!important;height:52px!important}.prestation-icon svg{width:26px!important;height:26px!important}}
+
+.resultats-timeline{padding:4rem 0!important;background:#F8FAFC!important}
+.resultats-timeline .container{max-width:1000px!important;margin:0 auto!important;padding:0 1.5rem!important}
+.resultats-timeline>.container>h2{text-align:center!important;font-family:"Space Grotesk",sans-serif!important;font-size:clamp(1.5rem,3vw,2rem)!important;color:#1E293B!important;margin:0 0 .75rem 0!important}
+.resultats-timeline .section-subtitle{text-align:center!important;color:#64748B!important;margin:0 auto 3.5rem auto!important;max-width:640px!important;line-height:1.65!important}
+.timeline-line{position:relative!important;display:flex!important;flex-direction:column!important;gap:3rem!important}
+.timeline-line::before{content:''!important;position:absolute!important;left:24px!important;top:48px!important;bottom:48px!important;width:2px!important;background:linear-gradient(180deg,#7C3AED 0%,rgba(124,58,237,.2) 100%)!important}
+.timeline-step{display:flex!important;gap:1.5rem!important;align-items:flex-start!important;position:relative!important;z-index:1!important}
+.timeline-step-marker{flex:0 0 48px!important;width:48px!important;height:48px!important;border-radius:50%!important;background:#7C3AED!important;display:flex!important;align-items:center!important;justify-content:center!important;box-shadow:0 0 0 4px #F8FAFC,0 0 0 5px rgba(124,58,237,.2)!important}
+.timeline-step-number{color:#FFF!important;font-family:"Space Grotesk",sans-serif!important;font-weight:700!important;font-size:1.15rem!important}
+.timeline-step-content{flex:1!important;background:#FFF!important;border:1.5px solid #E2E8F0!important;border-radius:14px!important;padding:1.5rem 1.75rem!important}
+.timeline-step-period{display:inline-block!important;font-size:.8rem!important;font-weight:600!important;color:#7C3AED!important;background:rgba(124,58,237,.08)!important;padding:.3rem .75rem!important;border-radius:100px!important;margin-bottom:.75rem!important;letter-spacing:.3px!important}
+.timeline-step-content h3{font-family:"Space Grotesk",sans-serif!important;font-size:1.25rem!important;font-weight:700!important;color:#1E293B!important;margin:0 0 .65rem 0!important}
+.timeline-step-content p{color:#475569!important;line-height:1.7!important;margin:0!important;font-size:.95rem!important}
+.resultats-conclusion{text-align:center!important;color:#475569!important;font-style:italic!important;margin:3rem auto 0 auto!important;max-width:700px!important;line-height:1.7!important}
+@media(max-width:640px){.timeline-line::before{left:20px!important;top:40px!important;bottom:40px!important}.timeline-step-marker{flex:0 0 40px!important;width:40px!important;height:40px!important}.timeline-step-content{padding:1.25rem!important}}
+
+.problemes-grille{padding:4rem 0!important;background:#FFF!important}
+.problemes-grille .container{max-width:1100px!important;margin:0 auto!important;padding:0 1.5rem!important}
+.problemes-grille>.container>h2{text-align:center!important;font-family:"Space Grotesk",sans-serif!important;font-size:clamp(1.5rem,3vw,2rem)!important;color:#1E293B!important;margin:0 0 .75rem 0!important}
+.problemes-grille .section-subtitle{text-align:center!important;color:#64748B!important;margin:0 auto 3rem auto!important;max-width:600px!important}
+.problemes-grid{display:grid!important;grid-template-columns:repeat(2,1fr)!important;gap:1.25rem!important;margin-bottom:2.5rem!important}
+.probleme-card{display:flex!important;gap:1rem!important;background:#FEF2F2!important;border:1.5px solid #FECACA!important;border-radius:14px!important;padding:1.5rem!important;transition:all .25s ease!important}
+.probleme-card:hover{background:#FFF!important;border-color:#F87171!important;transform:translateY(-2px)!important;box-shadow:0 8px 20px rgba(239,68,68,.08)!important}
+.probleme-icon{flex:0 0 40px!important;width:40px!important;height:40px!important;background:#FFF!important;border-radius:10px!important;display:flex!important;align-items:center!important;justify-content:center!important;color:#DC2626!important}
+.probleme-icon svg{width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important}
+.probleme-content{flex:1!important}
+.probleme-content h3{font-family:"Space Grotesk",sans-serif!important;font-size:1rem!important;font-weight:700!important;color:#1E293B!important;margin:0 0 .5rem 0!important;line-height:1.35!important}
+.probleme-content p{color:#64748B!important;font-size:.9rem!important;line-height:1.6!important;margin:0!important}
+.problemes-conclusion{text-align:center!important;color:#475569!important;line-height:1.7!important;max-width:700px!important;margin:0 auto!important}
+@media(max-width:768px){.problemes-grid{grid-template-columns:1fr!important}}
   </style>
 </head>
 <body>
@@ -175,11 +222,10 @@
   <!-- ========== HERO ========== -->
   <section class="hero hero--service">
     <div class="container">
-      <h1>Agence SEO local en Provence — Développez votre visibilité locale sur Google</h1>
-      <p class="hero__subtitle">Consultant SEO local spécialisé dans l'optimisation Google Business Profile, le référencement Google Maps et la stratégie de visibilité locale. Attirez les clients de proximité qui vous cherchent déjà sur Google.</p>
+      <h1>SEO local : développez votre visibilité sur Google et Google Maps</h1>
+      <p class="hero__subtitle">Optimisation Google Business Profile, pages géolocalisées, citations locales. On active tous les leviers pour faire de votre entreprise la référence dans sa zone.</p>
       <div class="hero__ctas">
         <a href="/contact" class="btn btn--primary">Devis gratuit</a>
-        <a href="/services/seo" class="btn btn--secondary">Voir nos autres spécialisations</a>
       </div>
       <div class="hero__trust">
         <span>✓ Audit offert</span>
@@ -197,125 +243,130 @@
     </div>
   </section>
 
-  <!-- ========== NOTRE PRESTATION ========== -->
-  <section class="section section--bg">
-    <div class="container">
-      <h2>Notre prestation SEO local : un accompagnement complet</h2>
-      <p>En tant qu'<strong>agence SEO local en Provence</strong>, nous couvrons l'ensemble des leviers du <strong>référencement local</strong> pour développer votre visibilité sur Google et Google Maps.</p>
-      <div class="steps-grid">
-
-        <div class="step">
-          <div class="step__number">1</div>
-          <h3 class="step__title">Audit SEO local</h3>
-          <p class="step__text">Nous analysons votre <strong>positionnement local sur Google Maps</strong>, votre fiche Google Business Profile actuelle, vos concurrents locaux et vos opportunités. Vous recevez un diagnostic clair de votre <strong>présence locale en ligne</strong> et un plan d'action priorisé.</p>
-        </div>
-
-        <div class="step">
-          <div class="step__number">2</div>
-          <h3 class="step__title">Optimisation et gestion Google Business Profile</h3>
-          <p class="step__text">Création ou <strong>optimisation fiche établissement Google</strong> : catégorisation précise, description optimisée, photos de qualité, horaires, services, produits, FAQ. Nous pilotons aussi la <strong>gestion Google Business Profile</strong> au quotidien : posts hebdomadaires, collecte et réponse aux avis, actualisations régulières.</p>
-        </div>
-
-        <div class="step">
-          <div class="step__number">3</div>
-          <h3 class="step__title">Référencement Google Maps</h3>
-          <p class="step__text">Stratégie complète pour <strong>améliorer votre positionnement local sur Google Maps</strong> : optimisation de la fiche, signaux de confiance, cohérence du NAP (Nom/Adresse/Téléphone), citations locales sur les annuaires pertinents. Notre objectif : vous faire <strong>apparaître sur Google Maps</strong> dès les premières recherches.</p>
-        </div>
-
-        <div class="step">
-          <div class="step__number">4</div>
-          <h3 class="step__title">Pages ville et quartier optimisées</h3>
-          <p class="step__text">Création de pages dédiées à chaque zone d'intervention, contenu géolocalisé unique, balisage LocalBusiness, maillage interne par territoire pour renforcer votre <strong>positionnement local</strong>.</p>
-        </div>
-
-        <div class="step">
-          <div class="step__number">5</div>
-          <h3 class="step__title">Suivi et reporting</h3>
-          <p class="step__text">Monitoring mensuel de votre positionnement sur les requêtes locales stratégiques, évolution de la visibilité sur Google Maps, trafic généré, leads entrants. Vous pilotez votre stratégie avec des données concrètes.</p>
-        </div>
-
+<section class="prestations-alternees">
+  <div class="container">
+    <h2>Notre prestation SEO local : un accompagnement complet</h2>
+    <p class="section-subtitle">En tant qu'<strong>agence SEO local en Provence</strong>, nous couvrons l'ensemble des leviers du <strong>référencement local</strong> pour développer votre visibilité sur Google et Google Maps.</p>
+    <div class="prestation-bloc" data-direction="left">
+      <div class="prestation-bloc-visual">
+        <div class="prestation-numero">01</div>
+        <div class="prestation-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+      </div>
+      <div class="prestation-bloc-content">
+        <h3>Audit SEO local</h3>
+        <p>Nous analysons votre <strong>positionnement local sur Google Maps</strong>, votre fiche Google Business Profile actuelle, vos concurrents locaux et vos opportunités. Vous recevez un diagnostic clair de votre <strong>présence locale en ligne</strong> et un plan d'action priorisé.</p>
       </div>
     </div>
-  </section>
-
-  <!-- ========== RÉSULTATS ========== -->
-  <section class="section">
-    <div class="container">
-      <h2>Les résultats concrets d'une stratégie SEO local</h2>
-      <p>Une stratégie de <strong>référencement local</strong> bien menée produit des résultats mesurables en 3 à 6 mois :</p>
-      <div class="deliverables-list">
-
-        <div class="deliverable-item">
-          <svg class="deliverable-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Une <strong>visibilité locale</strong> renforcée sur Google et Google Maps, avec des positions stables sur vos requêtes stratégiques</span>
-        </div>
-
-        <div class="deliverable-item">
-          <svg class="deliverable-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span><strong>Plus de demandes locales</strong> : appels, messages, formulaires remplis depuis votre fiche Google ou votre site</span>
-        </div>
-
-        <div class="deliverable-item">
-          <svg class="deliverable-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Une capacité à <strong>capter la clientèle de proximité</strong> active, celle qui cherche activement un prestataire local</span>
-        </div>
-
-        <div class="deliverable-item">
-          <svg class="deliverable-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Un <strong>positionnement local</strong> durable qui vous protège de la concurrence et des fluctuations publicitaires</span>
-        </div>
-
-        <div class="deliverable-item">
-          <svg class="deliverable-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Une <strong>présence locale en ligne</strong> professionnelle qui inspire confiance aux prospects</span>
-        </div>
-
+    <div class="prestation-bloc" data-direction="right">
+      <div class="prestation-bloc-visual">
+        <div class="prestation-numero">02</div>
+        <div class="prestation-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
       </div>
-      <p style="margin-top:1.5rem;">Le SEO local reste le levier au meilleur retour sur investissement pour toute entreprise qui dépend d'une zone géographique précise.</p>
-    </div>
-  </section>
-
-  <!-- ========== PROBLÈMES ========== -->
-  <section class="section section--bg">
-    <div class="container">
-      <h2>Les problèmes de référencement local que nous résolvons</h2>
-      <p>Vous vous reconnaissez dans l'une de ces situations ?</p>
-      <div class="for-who-list">
-
-        <div class="for-who-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          <span>Mon entreprise n'apparaît pas sur Google Maps</span>
-        </div>
-
-        <div class="for-who-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          <span>Ma fiche Google Business Profile n'est pas visible</span>
-        </div>
-
-        <div class="for-who-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          <span>Je ne suis pas référencé localement sur mes requêtes principales</span>
-        </div>
-
-        <div class="for-who-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          <span>Perte de visibilité locale sur Google</span>
-        </div>
-
-        <div class="for-who-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          <span>Baisse de position sur Google Maps</span>
-        </div>
-
-        <div class="for-who-item">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-          <span>Fiche Google Business Profile suspendue ou non vérifiée</span>
-        </div>
-
+      <div class="prestation-bloc-content">
+        <h3>Optimisation et gestion Google Business Profile</h3>
+        <p>Création ou <strong>optimisation fiche établissement Google</strong> : catégorisation précise, description optimisée, photos de qualité, horaires, services, produits, FAQ. Nous pilotons aussi la <strong>gestion Google Business Profile</strong> au quotidien : posts hebdomadaires, collecte et réponse aux avis, actualisations régulières.</p>
       </div>
-      <p style="margin-top:1.5rem;">Chaque situation a ses causes et ses solutions. Notre <strong>audit SEO local</strong> identifie le ou les facteurs bloquants et propose un plan correctif.</p>
     </div>
-  </section>
+    <div class="prestation-bloc" data-direction="left">
+      <div class="prestation-bloc-visual">
+        <div class="prestation-numero">03</div>
+        <div class="prestation-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg></div>
+      </div>
+      <div class="prestation-bloc-content">
+        <h3>Référencement Google Maps</h3>
+        <p>Stratégie complète pour <strong>améliorer votre positionnement local sur Google Maps</strong> : optimisation de la fiche, signaux de confiance, cohérence du NAP (Nom/Adresse/Téléphone), citations locales sur les annuaires pertinents. Notre objectif : vous faire <strong>apparaître sur Google Maps</strong> dès les premières recherches.</p>
+      </div>
+    </div>
+    <div class="prestation-bloc" data-direction="right">
+      <div class="prestation-bloc-visual">
+        <div class="prestation-numero">04</div>
+        <div class="prestation-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+      </div>
+      <div class="prestation-bloc-content">
+        <h3>Pages ville et quartier optimisées</h3>
+        <p>Création de pages dédiées à chaque zone d'intervention, contenu géolocalisé unique, balisage LocalBusiness, maillage interne par territoire pour renforcer votre <strong>positionnement local</strong>.</p>
+      </div>
+    </div>
+    <div class="prestation-bloc" data-direction="left">
+      <div class="prestation-bloc-visual">
+        <div class="prestation-numero">05</div>
+        <div class="prestation-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      </div>
+      <div class="prestation-bloc-content">
+        <h3>Suivi et reporting</h3>
+        <p>Monitoring mensuel de votre positionnement sur les requêtes locales stratégiques, évolution de la visibilité sur Google Maps, trafic généré, leads entrants. Vous pilotez votre stratégie avec des données concrètes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="resultats-timeline">
+  <div class="container">
+    <h2>Les résultats concrets d'une stratégie SEO local</h2>
+    <p class="section-subtitle">Une <strong>prestation SEO local</strong> bien menée produit des résultats progressifs et mesurables sur 6 mois.</p>
+    <div class="timeline-line">
+      <div class="timeline-step">
+        <div class="timeline-step-marker"><span class="timeline-step-number">1</span></div>
+        <div class="timeline-step-content">
+          <div class="timeline-step-period">Mois 1 à 2</div>
+          <h3>Fondations et optimisations</h3>
+          <p>Audit complet, optimisation de la fiche Google Business Profile, création ou refonte des pages géolocalisées, balisage LocalBusiness, corrections techniques. Les premiers signaux positifs apparaissent sur Google Maps.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-step-marker"><span class="timeline-step-number">2</span></div>
+        <div class="timeline-step-content">
+          <div class="timeline-step-period">Mois 3 à 4</div>
+          <h3>Montée en visibilité locale</h3>
+          <p>Progression des positions sur les requêtes géolocalisées, apparitions dans le pack local sur les recherches stratégiques, augmentation des impressions Google Business Profile, premières demandes entrantes via la fiche et le site.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-step-marker"><span class="timeline-step-number">3</span></div>
+        <div class="timeline-step-content">
+          <div class="timeline-step-period">Mois 5 à 6</div>
+          <h3>Domination locale et conversions</h3>
+          <p>Positions stables sur les requêtes les plus rentables, présence dominante dans le pack local, flux régulier d'appels, messages et demandes de devis qualifiées. Le SEO local est devenu votre premier canal d'acquisition.</p>
+        </div>
+      </div>
+    </div>
+    <p class="resultats-conclusion">Le SEO local reste le levier au <strong>meilleur retour sur investissement</strong> pour toute entreprise qui dépend d'une zone géographique précise.</p>
+  </div>
+</section>
+
+<section class="problemes-grille">
+  <div class="container">
+    <h2>Les problèmes de référencement local que nous résolvons</h2>
+    <p class="section-subtitle">Vous vous reconnaissez dans l'une de ces situations ?</p>
+    <div class="problemes-grid">
+      <div class="probleme-card">
+        <div class="probleme-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <div class="probleme-content"><h3>Mon entreprise n'apparaît pas sur Google Maps</h3><p>Fiche non optimisée, signaux de confiance insuffisants ou catégorisation erronée.</p></div>
+      </div>
+      <div class="probleme-card">
+        <div class="probleme-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <div class="probleme-content"><h3>Ma fiche Google Business Profile n'est pas visible</h3><p>Contenu trop pauvre, absence d'avis récents, posts inexistants.</p></div>
+      </div>
+      <div class="probleme-card">
+        <div class="probleme-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <div class="probleme-content"><h3>Je ne suis pas référencé localement sur mes requêtes principales</h3><p>Absence de pages géolocalisées, balisage LocalBusiness manquant.</p></div>
+      </div>
+      <div class="probleme-card">
+        <div class="probleme-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <div class="probleme-content"><h3>Perte de visibilité locale sur Google</h3><p>Mise à jour Google défavorable, concurrence qui s'active, signaux en dégradation.</p></div>
+      </div>
+      <div class="probleme-card">
+        <div class="probleme-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <div class="probleme-content"><h3>Baisse de position sur Google Maps</h3><p>Concurrence renforcée, manque d'avis récents, fiche non actualisée.</p></div>
+      </div>
+      <div class="probleme-card">
+        <div class="probleme-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+        <div class="probleme-content"><h3>Fiche Google Business Profile suspendue ou non vérifiée</h3><p>Non-conformité aux règles Google, intervention rapide nécessaire.</p></div>
+      </div>
+    </div>
+    <p class="problemes-conclusion">Chaque situation a ses causes et ses solutions. Notre <strong>audit SEO local</strong> identifie le ou les facteurs bloquants et propose un plan correctif.</p>
+  </div>
+</section>
 
   <!-- ========== FAQ ========== -->
   <section class="section">
@@ -468,5 +519,20 @@
   </div>
 </footer>
 <script defer src="/assets/js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      if (!item) return;
+      var isActive = item.classList.contains('active');
+      item.classList.toggle('active', !isActive);
+      this.setAttribute('aria-expanded', !isActive);
+      var answer = item.querySelector('.faq-answer');
+      if (answer) answer.style.maxHeight = isActive ? null : answer.scrollHeight + 'px';
+    });
+  });
+});
+</script>
 </body>
 </html>
