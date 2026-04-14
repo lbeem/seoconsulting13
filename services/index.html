@@ -384,22 +384,5 @@
   </footer>
 
   <script defer src="/assets/js/main.js"></script>
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var triggers = document.querySelectorAll('.specialisation-accordion-trigger');
-    triggers.forEach(function(trigger) {
-      trigger.addEventListener('click', function() {
-        var item = this.closest('.specialisation-accordion-item');
-        if (item.classList.contains('open')) {
-          item.classList.remove('open');
-          this.setAttribute('aria-expanded', 'false');
-        } else {
-          item.classList.add('open');
-          this.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
-  });
-  </script>
 </body>
 </html>
