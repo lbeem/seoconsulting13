@@ -135,8 +135,9 @@
 .faq-question:hover{color:#7C3AED!important}
 .faq-question svg{flex-shrink:0!important;width:20px!important;height:20px!important;color:#64748B!important;transition:transform .3s!important}
 .faq-item.active .faq-question svg{transform:rotate(180deg)!important;color:#7C3AED!important}
-.faq-answer{max-height:0!important;overflow:hidden!important;transition:max-height .3s ease!important}
-.faq-answer__inner{padding:0 1.5rem 1.25rem!important;color:#475569!important;font-size:.9375rem!important;line-height:1.7!important}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-item.active .faq-answer{max-height:500px}
+.faq-answer__inner{padding:0 1.5rem 1.25rem;color:#475569;font-size:.9375rem;line-height:1.7}
   </style>
 </head>
 <body>
@@ -478,5 +479,20 @@
   </div>
 </footer>
 <script defer src="/assets/js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      if (!item) return;
+      var isActive = item.classList.contains('active');
+      item.classList.toggle('active', !isActive);
+      this.setAttribute('aria-expanded', !isActive);
+      var answer = item.querySelector('.faq-answer');
+      if (answer) answer.style.maxHeight = isActive ? null : answer.scrollHeight + 'px';
+    });
+  });
+});
+</script>
 </body>
 </html>
