@@ -174,4 +174,19 @@
       if (t) { openAndHighlight(t); }
     });
   });
+
+  /* --- Specialisations accordion (multi-open) --- */
+  document.querySelectorAll('.specialisation-accordion-trigger').forEach(function (trigger) {
+    trigger.addEventListener('click', function () {
+      var item = this.closest('.specialisation-accordion-item');
+      var isOpen = item.classList.contains('open');
+      if (isOpen) {
+        item.classList.remove('open');
+        this.setAttribute('aria-expanded', 'false');
+      } else {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
 })();

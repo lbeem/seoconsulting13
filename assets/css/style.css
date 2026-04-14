@@ -2213,6 +2213,33 @@ ul.deliverables-list li svg {
 .seo-specialisation-card h3 { font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--color-dark); margin: 0 0 0.6rem 0; }
 .seo-specialisation-card p { font-size: 0.92rem; line-height: 1.6; color: var(--color-text); margin: 0; }
 
+/* Accordéon spécialisations SEO (/services/) */
+.seo-specialisations-accordion { padding: 3rem 0; background: var(--color-bg); }
+.seo-specialisations-accordion .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+.seo-specialisations-accordion h2 { text-align: center; font-family: var(--font-heading); font-size: clamp(1.5rem, 3vw, 2rem); color: var(--color-dark); margin-bottom: 0.75rem; }
+.seo-specialisations-accordion .section-subtitle { text-align: center; color: var(--color-muted); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+.specialisations-accordion-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.specialisation-accordion-item { background: var(--color-white); border: 1.5px solid var(--color-border); border-radius: 14px; overflow: hidden; transition: border-color 0.25s ease; }
+.specialisation-accordion-item:hover { border-color: var(--color-primary); }
+.specialisation-accordion-trigger { display: flex; align-items: center; gap: 1rem; width: 100%; padding: 1.25rem 1.5rem; background: transparent; border: none; cursor: pointer; font-family: inherit; text-align: left; transition: background 0.25s ease; }
+.specialisation-accordion-trigger:hover { background: rgba(124, 58, 237, 0.03); }
+.specialisation-accordion-icon { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; min-width: 40px; max-width: 40px; background: rgba(124, 58, 237, 0.08); border-radius: 10px; color: var(--color-primary); flex-shrink: 0; overflow: hidden; }
+.specialisation-accordion-icon svg { width: 22px !important; height: 22px !important; max-width: 22px !important; max-height: 22px !important; }
+.specialisation-accordion-title { flex: 1; font-family: var(--font-heading); font-size: 1.05rem; font-weight: 600; color: var(--color-dark); }
+.specialisation-accordion-chevron { display: flex; align-items: center; justify-content: center; color: var(--color-muted); transition: transform 0.3s ease, color 0.25s ease; flex-shrink: 0; }
+.specialisation-accordion-chevron svg { width: 20px !important; height: 20px !important; }
+.specialisation-accordion-item.open .specialisation-accordion-chevron { transform: rotate(180deg); color: var(--color-primary); }
+.specialisation-accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; padding: 0 1.5rem; }
+.specialisation-accordion-item.open .specialisation-accordion-content { max-height: 500px; padding: 0 1.5rem 1.5rem; }
+.specialisation-accordion-content p { font-size: 0.95rem; line-height: 1.7; color: var(--color-text); margin: 0; padding-left: 56px; }
+@media (max-width: 600px) {
+  .specialisation-accordion-trigger { padding: 1rem 1.25rem; gap: 0.75rem; }
+  .specialisation-accordion-icon { width: 36px; height: 36px; min-width: 36px; }
+  .specialisation-accordion-title { font-size: 0.95rem; }
+  .specialisation-accordion-content p { padding-left: 0; font-size: 0.9rem; }
+  .specialisation-accordion-item.open .specialisation-accordion-content { padding: 0 1.25rem 1.25rem; }
+}
+
 /* Version brève (hub villes) */
 .seo-specialisations-brief { padding: 3rem 0; background: var(--color-white); }
 .seo-specialisations-brief .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
