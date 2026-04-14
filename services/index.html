@@ -59,6 +59,34 @@
     ]
   }
   </script>
+
+  <style>
+  .seo-specialisations-accordion{padding:4rem 0!important;background:#F8FAFC!important}
+  .seo-specialisations-accordion .container{max-width:900px!important;margin:0 auto!important;padding:0 1.5rem!important}
+  .seo-specialisations-accordion>.container>h2{text-align:center!important;font-family:"Space Grotesk",sans-serif!important;font-size:clamp(1.5rem,3vw,2rem)!important;color:#1E293B!important;margin:0 0 .75rem 0!important}
+  .seo-specialisations-accordion>.container>.section-subtitle{text-align:center!important;color:#64748B!important;margin:0 auto 2.5rem auto!important;max-width:600px!important}
+  .specialisations-accordion-list{display:flex!important;flex-direction:column!important;gap:.75rem!important;list-style:none!important;padding:0!important;margin:0!important}
+  .specialisation-accordion-item{background:#FFF!important;border:1.5px solid #E2E8F0!important;border-radius:14px!important;overflow:hidden!important;transition:border-color .25s ease!important}
+  .specialisation-accordion-item:hover{border-color:#7C3AED!important}
+  .specialisation-accordion-trigger{display:flex!important;align-items:center!important;gap:1rem!important;width:100%!important;padding:1.25rem 1.5rem!important;background:transparent!important;border:none!important;cursor:pointer!important;font-family:inherit!important;text-align:left!important;transition:background .25s ease!important}
+  .specialisation-accordion-trigger:hover{background:rgba(124,58,237,.03)!important}
+  .specialisation-accordion-icon{display:flex!important;align-items:center!important;justify-content:center!important;width:40px!important;height:40px!important;min-width:40px!important;max-width:40px!important;background:rgba(124,58,237,.08)!important;border-radius:10px!important;color:#7C3AED!important;flex-shrink:0!important}
+  .specialisation-accordion-icon svg{width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;display:block!important}
+  .specialisation-accordion-title{flex:1!important;font-family:"Space Grotesk",sans-serif!important;font-size:1.05rem!important;font-weight:600!important;color:#1E293B!important}
+  .specialisation-accordion-chevron{display:flex!important;align-items:center!important;justify-content:center!important;width:24px!important;height:24px!important;min-width:24px!important;max-width:24px!important;color:#64748B!important;transition:transform .3s ease,color .25s ease!important;flex-shrink:0!important}
+  .specialisation-accordion-chevron svg{width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important;display:block!important}
+  .specialisation-accordion-item.open .specialisation-accordion-chevron{transform:rotate(180deg)!important;color:#7C3AED!important}
+  .specialisation-accordion-content{max-height:0!important;overflow:hidden!important;transition:max-height .35s ease,padding .35s ease!important;padding:0 1.5rem!important}
+  .specialisation-accordion-item.open .specialisation-accordion-content{max-height:500px!important;padding:0 1.5rem 1.5rem 1.5rem!important}
+  .specialisation-accordion-content p{font-size:.95rem!important;line-height:1.7!important;color:#475569!important;margin:0!important;padding-left:56px!important}
+  @media(max-width:600px){
+    .specialisation-accordion-trigger{padding:1rem 1.25rem!important;gap:.75rem!important}
+    .specialisation-accordion-icon{width:36px!important;height:36px!important;min-width:36px!important}
+    .specialisation-accordion-title{font-size:.95rem!important}
+    .specialisation-accordion-content p{padding-left:0!important;font-size:.9rem!important}
+    .specialisation-accordion-item.open .specialisation-accordion-content{padding:0 1.25rem 1.25rem 1.25rem!important}
+  }
+  </style>
 </head>
 <body>
 
@@ -352,5 +380,22 @@
   </footer>
 
   <script defer src="/assets/js/main.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var triggers = document.querySelectorAll('.specialisation-accordion-trigger');
+    triggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function() {
+        var item = this.closest('.specialisation-accordion-item');
+        if (item.classList.contains('open')) {
+          item.classList.remove('open');
+          this.setAttribute('aria-expanded', 'false');
+        } else {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  });
+  </script>
 </body>
 </html>
