@@ -104,6 +104,34 @@
     ]
   }
   </script>
+
+  <style>
+  .seo-specialisations-accordion{padding:4rem 0!important;background:#F8FAFC!important}
+  .seo-specialisations-accordion .container{max-width:900px!important;margin:0 auto!important;padding:0 1.5rem!important}
+  .seo-specialisations-accordion>.container>h2{text-align:center!important;font-family:"Space Grotesk",sans-serif!important;font-size:clamp(1.5rem,3vw,2rem)!important;color:#1E293B!important;margin:0 0 .75rem 0!important}
+  .seo-specialisations-accordion>.container>.section-subtitle{text-align:center!important;color:#64748B!important;margin:0 auto 2.5rem auto!important;max-width:600px!important}
+  .specialisations-accordion-list{display:flex!important;flex-direction:column!important;gap:.75rem!important;list-style:none!important;padding:0!important;margin:0!important}
+  .specialisation-accordion-item{background:#FFF!important;border:1.5px solid #E2E8F0!important;border-radius:14px!important;overflow:hidden!important;transition:border-color .25s ease!important}
+  .specialisation-accordion-item:hover{border-color:#7C3AED!important}
+  .specialisation-accordion-trigger{display:flex!important;align-items:center!important;gap:1rem!important;width:100%!important;padding:1.25rem 1.5rem!important;background:transparent!important;border:none!important;cursor:pointer!important;font-family:inherit!important;text-align:left!important;transition:background .25s ease!important}
+  .specialisation-accordion-trigger:hover{background:rgba(124,58,237,.03)!important}
+  .specialisation-accordion-icon{display:flex!important;align-items:center!important;justify-content:center!important;width:40px!important;height:40px!important;min-width:40px!important;max-width:40px!important;background:rgba(124,58,237,.08)!important;border-radius:10px!important;color:#7C3AED!important;flex-shrink:0!important}
+  .specialisation-accordion-icon svg{width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;display:block!important}
+  .specialisation-accordion-title{flex:1!important;font-family:"Space Grotesk",sans-serif!important;font-size:1.05rem!important;font-weight:600!important;color:#1E293B!important}
+  .specialisation-accordion-chevron{display:flex!important;align-items:center!important;justify-content:center!important;width:24px!important;height:24px!important;min-width:24px!important;max-width:24px!important;color:#64748B!important;transition:transform .3s ease,color .25s ease!important;flex-shrink:0!important}
+  .specialisation-accordion-chevron svg{width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important;display:block!important}
+  .specialisation-accordion-item.open .specialisation-accordion-chevron{transform:rotate(180deg)!important;color:#7C3AED!important}
+  .specialisation-accordion-content{max-height:0!important;overflow:hidden!important;transition:max-height .35s ease,padding .35s ease!important;padding:0 1.5rem!important}
+  .specialisation-accordion-item.open .specialisation-accordion-content{max-height:500px!important;padding:0 1.5rem 1.5rem 1.5rem!important}
+  .specialisation-accordion-content p{font-size:.95rem!important;line-height:1.7!important;color:#475569!important;margin:0!important;padding-left:56px!important}
+  @media(max-width:600px){
+    .specialisation-accordion-trigger{padding:1rem 1.25rem!important;gap:.75rem!important}
+    .specialisation-accordion-icon{width:36px!important;height:36px!important;min-width:36px!important}
+    .specialisation-accordion-title{font-size:.95rem!important}
+    .specialisation-accordion-content p{padding-left:0!important;font-size:.9rem!important}
+    .specialisation-accordion-item.open .specialisation-accordion-content{padding:0 1.25rem 1.25rem 1.25rem!important}
+  }
+  </style>
 </head>
 <body>
 
@@ -230,39 +258,67 @@
       </div>
     </section>
 
-    <!-- ========== 7 SPÉCIALISATIONS SEO (version brève) ========== -->
-    <section class="seo-specialisations-brief">
+    <!-- ========== 7 SPÉCIALISATIONS SEO (accordéon) ========== -->
+    <section class="seo-specialisations-accordion">
       <div class="container">
         <h2>Nos 7 spécialisations SEO au service de votre visibilité locale</h2>
-        <p class="seo-specialisations-brief-subtitle">Une expertise complète déployée dans chacune de nos 9 villes d'intervention.</p>
-        <div class="seo-specialisations-brief-grid">
-          <div class="seo-specialisation-brief-card">
-            <div class="seo-specialisation-brief-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <div><h3>SEO local</h3><p>Pages dédiées à chaque ville ou quartier, contenu géolocalisé et balisage LocalBusiness pour votre marché de proximité.</p></div>
+        <p class="section-subtitle">Une expertise complète déployée dans chacune de nos 9 villes d'intervention. Cliquez sur une spécialisation pour en savoir plus.</p>
+        <div class="specialisations-accordion-list">
+          <div class="specialisation-accordion-item">
+            <button class="specialisation-accordion-trigger" aria-expanded="false">
+              <span class="specialisation-accordion-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span class="specialisation-accordion-title">SEO local</span>
+              <span class="specialisation-accordion-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="specialisation-accordion-content"><p>Pages dédiées à chaque ville, quartier ou zone d'intervention, contenu géolocalisé et balisage LocalBusiness pour votre marché de proximité.</p></div>
           </div>
-          <div class="seo-specialisation-brief-card">
-            <div class="seo-specialisation-brief-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
-            <div><h3>SEO technique</h3><p>Vitesse, Core Web Vitals, balisage Schema : les fondations d'un référencement solide.</p></div>
+          <div class="specialisation-accordion-item">
+            <button class="specialisation-accordion-trigger" aria-expanded="false">
+              <span class="specialisation-accordion-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+              <span class="specialisation-accordion-title">SEO technique</span>
+              <span class="specialisation-accordion-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="specialisation-accordion-content"><p>Vitesse, Core Web Vitals, crawl, indexation et balisage Schema : les fondations d'un référencement solide et durable.</p></div>
           </div>
-          <div class="seo-specialisation-brief-card">
-            <div class="seo-specialisation-brief-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-            <div><h3>SEO sémantique et cocon</h3><p>Cocons thématiques et pages piliers pour devenir une référence sur vos sujets.</p></div>
+          <div class="specialisation-accordion-item">
+            <button class="specialisation-accordion-trigger" aria-expanded="false">
+              <span class="specialisation-accordion-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+              <span class="specialisation-accordion-title">SEO sémantique et cocon</span>
+              <span class="specialisation-accordion-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="specialisation-accordion-content"><p>Cocons thématiques et pages piliers pour devenir une référence sur vos sujets stratégiques.</p></div>
           </div>
-          <div class="seo-specialisation-brief-card">
-            <div class="seo-specialisation-brief-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></div>
-            <div><h3>Rédaction web SEO</h3><p>Contenus optimisés qui plaisent à Google comme à vos lecteurs.</p></div>
+          <div class="specialisation-accordion-item">
+            <button class="specialisation-accordion-trigger" aria-expanded="false">
+              <span class="specialisation-accordion-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></span>
+              <span class="specialisation-accordion-title">Rédaction web SEO</span>
+              <span class="specialisation-accordion-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="specialisation-accordion-content"><p>Contenus optimisés qui plaisent à Google comme à vos lecteurs : articles, pages piliers et landing pages.</p></div>
           </div>
-          <div class="seo-specialisation-brief-card">
-            <div class="seo-specialisation-brief-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
-            <div><h3>Netlinking</h3><p>Backlinks de qualité pour renforcer votre autorité.</p></div>
+          <div class="specialisation-accordion-item">
+            <button class="specialisation-accordion-trigger" aria-expanded="false">
+              <span class="specialisation-accordion-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
+              <span class="specialisation-accordion-title">Netlinking</span>
+              <span class="specialisation-accordion-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="specialisation-accordion-content"><p>Backlinks de qualité et partenariats éditoriaux pour renforcer votre autorité sur les requêtes concurrentielles.</p></div>
           </div>
-          <div class="seo-specialisation-brief-card">
-            <div class="seo-specialisation-brief-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></div>
-            <div><h3>Suivi de positions et reporting</h3><p>Monitoring quotidien et reporting mensuel transparent.</p></div>
+          <div class="specialisation-accordion-item">
+            <button class="specialisation-accordion-trigger" aria-expanded="false">
+              <span class="specialisation-accordion-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+              <span class="specialisation-accordion-title">Suivi de positions et reporting</span>
+              <span class="specialisation-accordion-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="specialisation-accordion-content"><p>Monitoring quotidien de vos positions Google et reporting mensuel transparent pour piloter votre stratégie.</p></div>
           </div>
-          <div class="seo-specialisation-brief-card">
-            <div class="seo-specialisation-brief-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4c0 2 2 3 2 6H6a2 2 0 0 0-2 2v2h16v-2a2 2 0 0 0-2-2h-4c0-3 2-4 2-6a4 4 0 0 0-4-4Z"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></div>
-            <div><h3>SEO IA / GEO</h3><p>Visibilité dans ChatGPT, Perplexity et Google AI Overviews.</p></div>
+          <div class="specialisation-accordion-item">
+            <button class="specialisation-accordion-trigger" aria-expanded="false">
+              <span class="specialisation-accordion-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+              <span class="specialisation-accordion-title">SEO IA / GEO</span>
+              <span class="specialisation-accordion-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="specialisation-accordion-content"><p>Visibilité dans ChatGPT, Perplexity et Google AI Overviews : l'expertise SEO nouvelle génération.</p></div>
           </div>
         </div>
       </div>
@@ -589,5 +645,22 @@
   </footer>
 
   <script defer src="/assets/js/main.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var triggers = document.querySelectorAll('.specialisation-accordion-trigger');
+    triggers.forEach(function(trigger) {
+      trigger.addEventListener('click', function() {
+        var item = this.closest('.specialisation-accordion-item');
+        if (item.classList.contains('open')) {
+          item.classList.remove('open');
+          this.setAttribute('aria-expanded', 'false');
+        } else {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  });
+  </script>
 </body>
 </html>
