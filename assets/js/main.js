@@ -175,16 +175,19 @@
     });
   });
 
-  /* --- Specialisations accordion (multi-open) --- */
+  /* --- Specialisations accordion (multi-open, dynamic max-height) --- */
   document.querySelectorAll('.specialisation-accordion-trigger').forEach(function (trigger) {
     trigger.addEventListener('click', function () {
       var item = this.closest('.specialisation-accordion-item');
+      var content = item.querySelector('.specialisation-accordion-content');
       var isOpen = item.classList.contains('open');
       if (isOpen) {
         item.classList.remove('open');
+        if (content) content.style.maxHeight = null;
         this.setAttribute('aria-expanded', 'false');
       } else {
         item.classList.add('open');
+        if (content) content.style.maxHeight = content.scrollHeight + 'px';
         this.setAttribute('aria-expanded', 'true');
       }
     });
