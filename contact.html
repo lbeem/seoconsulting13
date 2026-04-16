@@ -188,52 +188,28 @@
 
             <div class="form-row">
               <div class="form-field">
-                <label for="contact-city">Votre ville *</label>
-                <select id="contact-city" name="city" required>
-                  <option value="">-- Choisir --</option>
-                  <option value="Marseille">Marseille</option>
-                  <option value="Aix-en-Provence">Aix-en-Provence</option>
-                  <option value="Avignon">Avignon</option>
-                  <option value="Aubagne">Aubagne</option>
-                  <option value="Martigues">Martigues</option>
-                  <option value="Salon-de-Provence">Salon-de-Provence</option>
-                  <option value="La Ciotat">La Ciotat</option>
-                  <option value="Vitrolles">Vitrolles</option>
-                  <option value="Gardanne">Gardanne</option>
-                  <option value="Autre">Autre ville</option>
-                </select>
+                <label for="contact-city">Votre ville</label>
+                <input type="text" id="contact-city" name="city" placeholder="Ex : Marseille, Aix-en-Provence...">
               </div>
               <div class="form-field">
-                <label for="contact-project">Type de projet *</label>
+                <label for="contact-project">Votre besoin *</label>
                 <select id="contact-project" name="project_type" required>
                   <option value="">-- Choisir --</option>
-                  <option value="SEO">Référencement SEO</option>
-                  <option value="SEA">Google Ads (SEA)</option>
-                  <option value="Creation">Création de site web</option>
-                  <option value="Refonte">Refonte de site web</option>
-                  <option value="Audit">Audit SEO et stratégie</option>
-                  <option value="Optimisation">Optimisation continue</option>
-                  <option value="Autre">Je ne sais pas encore</option>
+                  <option value="SEO local">SEO local</option>
+                  <option value="SEO technique">SEO technique</option>
+                  <option value="SEO sémantique et cocon">SEO sémantique et cocon</option>
+                  <option value="Rédaction web SEO">Rédaction web SEO</option>
+                  <option value="Netlinking">Netlinking</option>
+                  <option value="Suivi de positions et reporting">Suivi de positions et reporting</option>
+                  <option value="SEO IA / GEO">SEO IA / GEO</option>
+                  <option value="Je ne sais pas encore">Je ne sais pas encore</option>
                 </select>
               </div>
             </div>
 
             <div class="form-field">
-              <label for="contact-budget">Budget indicatif</label>
-              <select id="contact-budget" name="budget">
-                <option value="">-- Choisir --</option>
-                <option value="< 1000€">Moins de 1 000 €</option>
-                <option value="1000-3000€">1 000 à 3 000 €</option>
-                <option value="3000-5000€">3 000 à 5 000 €</option>
-                <option value="5000-10000€">5 000 à 10 000 €</option>
-                <option value="> 10000€">Plus de 10 000 €</option>
-                <option value="À définir">À définir ensemble</option>
-              </select>
-            </div>
-
-            <div class="form-field">
-              <label for="contact-message">Votre message *</label>
-              <textarea id="contact-message" name="message" rows="6" required placeholder="Parlez-nous de votre activité, de vos objectifs et de votre projet..."></textarea>
+              <label for="contact-message">Votre message</label>
+              <textarea id="contact-message" name="message" rows="6" placeholder="Parlez-nous de votre activité, de vos objectifs et de votre projet..."></textarea>
             </div>
 
             <div class="form-field form-checkbox">
