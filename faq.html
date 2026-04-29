@@ -418,24 +418,8 @@
       });
     });
 
-    // FAQ ACCORDIONS
-    document.querySelectorAll('.faq-question').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var item = this.closest('.faq-item');
-        var wasActive = item.classList.contains('active');
-        var group = item.closest('.faq-questions');
-        if (group) group.querySelectorAll('.faq-item.active').forEach(function(o) {
-          if (o !== item) { o.classList.remove('active'); o.querySelector('.faq-question').setAttribute('aria-expanded','false'); o.querySelector('.faq-answer').style.maxHeight = null; }
-        });
-        if (!wasActive) {
-          item.classList.add('active'); this.setAttribute('aria-expanded','true');
-          item.querySelector('.faq-answer').style.maxHeight = item.querySelector('.faq-answer').scrollHeight + 'px';
-        } else {
-          item.classList.remove('active'); this.setAttribute('aria-expanded','false');
-          item.querySelector('.faq-answer').style.maxHeight = null;
-        }
-      });
-    });
+    // FAQ ACCORDIONS : pilotés par main.js (.faq-item / .faq-question / .faq-answer)
+    // pas de handler inline ici pour éviter le double-binding
 
     // EXPERTISE ACCORDIONS (level 2)
     document.querySelectorAll('.expertise-header').forEach(function(header) {
